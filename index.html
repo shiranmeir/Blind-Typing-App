@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="keyboard.css" />
+    <title>Key Board</title>
+  </head>
+  <body>
+    <nav>
+      <h1>typinGame</h1>
+      <div class="numbers">
+        <div id="errorsLabel">Errors:</div>
+        <div id="errors">0</div>
+      </div>
+      <div class="numbers">
+        <div id="timeLabel">Time Left:</div>
+        <div id="time">01:00</div>
+      </div>
+      <button id="restart" onclick="restart()">New Game</button>
+    </nav>
+    <progress id="pb"></progress>
+    <div id="textErea">
+      <div id="sources"></div>
+    </div>
+    <div id="keyboard__keys"></div>
+    <script src="sources.js"></script>
+    <script src="keys.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  </body>
+</html>
